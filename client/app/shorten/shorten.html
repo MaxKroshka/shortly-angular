@@ -4,18 +4,15 @@
       <input class='waves-effect waves-light btn' type='submit' value='Shorten' ng-click="addLink(urlInput.$valid)">
       <div ng-show="urlInput.url.$error.url"> Invalid URL </div>
   </form>
-
+  
   <img ng-show="spinner" class='spinner' src='/assets/spiffygif_46x46.gif'>
-  <div class='message' ng-hide="hidden">
-  <div class='link'>
-    <img class='spinner' src='/assets/redirect_icon.png'/>
+  <div ng-hide="hidden" class='link'>
+    <img src='/assets/redirect_icon.png'/>
     <div class='info'>
       <div class='title'>{{link.title}}</div>
       <div class='original'>{{link.url}}</div>
       <a href='{{link.base_url}}/{{link.code}}'>{{link.base_url}}/{{link.code}}</a>
-  </div> 
-  </div>
-    
+    </div>
   </div>
 </div>
 
