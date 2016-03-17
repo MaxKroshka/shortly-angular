@@ -5,7 +5,7 @@
     <i class="material-icons">close</i>
   </div>
   <div class='link' ng-repeat="link in data.links | filter:search:strict | orderBy:'-visits'">
-    <img src='/assets/redirect_icon.png' />
+    <img src='/assets/url.png' />
     <div class='info'>
       <div class='visits'><span class='count'>{{link.visits}}</span>Visits</div>
       <div class='title'>{{link.title}}</div>

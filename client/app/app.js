@@ -25,7 +25,7 @@ angular.module('shortly', [
     })
     .when('/shorten', {
       templateUrl: 'app/shorten/shorten.html',
-      controller: 'ShortenController', //is it nececssary to have this line and define it in the teplate?
+      controller: 'ShortenController',
       access: {restricted: true}
     })
     .when('/signout', {
